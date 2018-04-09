@@ -1,8 +1,18 @@
 # ImageCLEF: Brown University
 
-## To train 
-Go into ImageCaptioning.pytorch and run:
+## Installation on CCV
+```
+# Make sure Anaconda is loaded 
+module load anaconda/2-4.3.0
+conda create -n caption 
+source activate caption
+conda install pytorch
+conda install -c soumith torchvision
+conda install h5py
+```
 
+## To train 
+Request GPU node. Activate virtual environment. Go into ImageCaptioning.pytorch and run:
 
 ```
 python train.py \
