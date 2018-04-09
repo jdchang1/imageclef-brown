@@ -23,7 +23,7 @@ python train.py \
 --input_label_h5 /gpfs/data/ceickhof/imageclef/data/imagecleftalk_label.h5 \
 --batch_size 10 --finetune_cnn_after 10 --learning_rate 5e-4 \
 --learning_rate_decay_start 0 --scheduled_sampling_start 0 \
---checkpoint_path log_imageclef-topdown \
+--checkpoint_path log_imageclef-topdown \ # make sure this directory exists
 --save_checkpoint_every 6000 \
 --cnn_model resnet101 \
 --cnn_weight /gpfs/data/ceickhof/imagenet_weights/resnet101.pth \
